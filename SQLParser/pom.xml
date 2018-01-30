@@ -17,8 +17,8 @@
            http://central.maven.org/maven2/org/eclipse/jetty/jetty-maven-plugin/
         -->
       <jettyVersion>9.3.9.v20160517</jettyVersion>
-      <maven.compiler.source>1.9</maven.compiler.source>
-      <maven.compiler.target>1.9</maven.compiler.target>
+      <maven.compiler.source>1.8</maven.compiler.source>
+      <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
   <repositories>
      <repository>
