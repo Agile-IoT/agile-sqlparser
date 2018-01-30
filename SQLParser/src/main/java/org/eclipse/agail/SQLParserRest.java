@@ -96,7 +96,7 @@ public class SQLParserRest extends AbstractHandler
 
     public static void main(String[] args) throws Exception
     {
-        Server server = new Server(8080);
+        Server server = new Server(9123);
         server.setHandler(new SQLParserRest());
 
         server.start();
