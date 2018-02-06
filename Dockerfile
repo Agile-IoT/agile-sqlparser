@@ -1,8 +1,5 @@
-FROM java:8
-
-# Install maven
-RUN apt-get update
-RUN apt-get install -y maven
+ARG BASEIMAGE_BUILD=agileiot/raspberry-pi3-zulujdk:8-jdk-maven
+FROM $BASEIMAGE_BUILD
 
 COPY SQLParser /usr/src/app
 WORKDIR /usr/src/app
