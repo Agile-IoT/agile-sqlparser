@@ -10,7 +10,6 @@ RUN ["mvn", "dependency:resolve"]
 RUN ["mvn", "verify"]
 RUN ["mvn", "package"]
 #EXPOSE 8080
-target/agile-sqlparser-0.1-SNAPSHOT-jar-with-dependencies.jar 
 ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -jar target/agile-sqlparser-0.1-SNAPSHOT-jar-with-dependencies.jar" ]
 
 
